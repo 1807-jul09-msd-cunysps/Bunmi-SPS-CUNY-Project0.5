@@ -9,40 +9,27 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
+using Newtonsoft.Json; // library to serialize and deserialize
+using System.Net.Http.Headers;
 
 
-namespace PhoneClient
+
+namespace PhoneContactClient
 
 {
     class Programs
     {
+        //static async Task<IEnumerable<User>> get()
+        {
+            
+        }
+
+
         static void Main(string[] args)
         {
 
-            List<Person> persons = new List<Person>
-            {
-                new Person(){ Personid = 1, firstName = "Tobi", lastName = "Loba", }
-            };
-
-     
-            Stream stream = File.Open("PersonData.dat",
-                FileMode.Create);
-
-            BinaryFormatter bf = new BinaryFormatter();
-
-            bf.Serialize(stream, tobi);
-            stream.Close();
-            tobi = null;
-
-            stream = File.Open("PersonData.dat", FileMode.Open);
-
-            bf = new BinaryFormatter();
-
-            tobi = (Person)bf.Deserialize(stream);
-            stream.Close();
-            Console.WriteLine(tobi.ToString());
-
-            Console.ReadLine();
+            //var users = get();
+            //foreach (var user in users.Res)
         }
 
     }

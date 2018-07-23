@@ -1,10 +1,11 @@
-﻿namespace PhoneLibrary
+﻿namespace PhoneContactLibrary
 {
     public class Phone
     {
-        public int id { get; set; }
+        public long Pid { get; set; }
         public Country countryCode { get; set; }
         public string areaCode { get; set; }
         public string number { get; set; }
+        public string ext { get; set; }
     }
 }
