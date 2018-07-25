@@ -4,7 +4,7 @@ using System.Collections.Generic;// generics
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
+using System.Data; // ADO.Net lib
 using System.Data.SqlClient;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -12,6 +12,7 @@ using System.Xml.Serialization;
 using Newtonsoft.Json; // library to serialize and deserialize
 using System.Net.Http.Headers;
 using PhoneContactLibrary;
+
 
 namespace PhoneContactClient
 
@@ -65,6 +66,42 @@ namespace PhoneContactClient
 
         static void Main(string[] args)
         {
+
+            SqlConnection con = null;
+            string command = "select * from CUNY_SPS_DDL";
+            string conStr = "Data Source=rev-cuny-b-server.database.windows.net;Initial Catalog=REV-CUNY;Persist Security Info=True;User ID=bunmialo;Password=Olamide1";
+            //1. SQL Connection
+            try
+            {
+                con = new SqlConnection(conStr);
+                con.Open();
+
+                //2. SQL Command
+                SqlCommand cmd = new SqlCommand(command, con);
+
+                //3. Execute query
+                SqlDataReader dr = cmd.ExecuteReader();
+                Console.WriteLine("Id Name      City");
+                while (dr.Read())
+                {
+                    Console.WriteLine(dr[0] + " " + dr[1] + " " + dr[2] + " " + dr[4]);
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            Console.WriteLine();
+            Console.ReadLine();
 
             //var users = get();
             //foreach (var user in users.Res)
