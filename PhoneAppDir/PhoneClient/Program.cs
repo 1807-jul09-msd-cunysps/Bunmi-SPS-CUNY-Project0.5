@@ -36,7 +36,6 @@ namespace PhoneContactClient
             p1.phone.Pid = p1.Pid;
             p1.phone.areaCode = "347";
             p1.phone.countryCode = Country.US;
-            p1.phone.ext = "";
             p1.phone.number = "3452878991";
 
             Person p2 = new Person();
@@ -53,7 +52,6 @@ namespace PhoneContactClient
             p1.phone.Pid = p1.Pid;
             p1.phone.areaCode = "212";
             p1.phone.countryCode = Country.US;
-            p1.phone.ext = "";
             p1.phone.number = "3452878992";
 
             List<Person> p = new List<Person>();
@@ -68,8 +66,8 @@ namespace PhoneContactClient
         {
 
             SqlConnection con = null;
-            string command = "select * from CUNY_SPS_DDL";
-            string conStr = "Data Source=rev-cuny-b-server.database.windows.net;Initial Catalog=REV-CUNY;Persist Security Info=True;User ID=bunmialo;Password=Olamide1";
+            string command = "select * from Person";
+            string conStr = "Data Source=rev-cuny-b-server.database.windows.net;Initial Catalog=PhoneDirApp;Persist Security Info=True;User ID=bunmialo;Password=Olamide1";
             //1. SQL Connection
             try
             {
@@ -81,10 +79,10 @@ namespace PhoneContactClient
 
                 //3. Execute query
                 SqlDataReader dr = cmd.ExecuteReader();
-                Console.WriteLine("Id Name      City");
+                Console.WriteLine("Id Fname Lname");
                 while (dr.Read())
                 {
-                    Console.WriteLine(dr[0] + " " + dr[1] + " " + dr[2] + " " + dr[4]);
+                    Console.WriteLine(dr[0] + " " + dr[1] + " " + dr[2]);
                 }
             }
             catch (SqlException ex)

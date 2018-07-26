@@ -6,6 +6,5 @@
         public Country countryCode { get; set; }
         public string areaCode { get; set; }
         public string number { get; set; }
-        public string ext { get; set; }
     }
 }
