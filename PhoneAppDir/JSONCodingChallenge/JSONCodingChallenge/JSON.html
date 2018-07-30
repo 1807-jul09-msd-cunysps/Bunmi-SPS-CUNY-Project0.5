@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Our superheroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <script>
+        var header = document.querySelector('header');
+        header
+        var section = document.querySelector('section');
+
+        var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+
+        var request = new XMLHttpRequest();
+
+        request.open('GET', requestURL);
+
+        request.responseType = 'json';
+
+        request.send()
+
+        request.onload = function () {
+
+            var superHeroes = request.response;
+
+            populateHeader(superHeroes);
+
+            showHeroes(superHeroes);
+
+        }
+
+        function myHeader(headContent) {
+            var h1 = document.createElement('h1');
+            var h1Text = document.createTextNode("super hero squad")
+            h1.appendChild(h1Text);
+
+            var p = document.createElement('p');
+            var pText = document.createTextNode("Hometown: Metro City // Formed: 2016")
+            p.appendChild(pText);
+        }
+
+
+    </script>
+</body>
+</html>

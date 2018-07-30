@@ -19,14 +19,16 @@ namespace PhoneContactLibrary
             this.Pid = Pid;
             this.firstName = firstName;
             this.lastName = lastName;
-            this.address = new Address(); // initializing dependent object Address
+            // initializing dependent object Address
             this.phone = new Phone(); //initializing dependent object Phone
         }
 
-            public long Pid { get; set; }
+        
+
+        public long Pid { get; set; }
             public string firstName { get; set; }
             public string lastName { get; set; }
-            public Address address { get; set; }
+           
             public Phone phone { get; set; }
 
         
@@ -37,7 +39,7 @@ namespace PhoneContactLibrary
             info.AddValue("Personid", Pid);
             info.AddValue("FirstName", firstName);
             info.AddValue("LastName", lastName);
-            info.AddValue("Address", address);
+            
             info.AddValue("Phone", phone);
         }
 
@@ -46,8 +48,7 @@ namespace PhoneContactLibrary
             Pid = (long)info.GetValue("PersonId", typeof(long));
             firstName = (string)info.GetValue("FirstName", typeof(string));
             lastName = (string)info.GetValue("LastName", typeof(string));
-            address = (Address)info.GetValue("Address", typeof(Address));
-            phone = (Phone)info.GetValue("Phone", typeof(string));
+           
         }
     }
 }
