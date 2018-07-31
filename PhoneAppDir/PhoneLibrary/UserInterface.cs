@@ -7,6 +7,7 @@ using System.Data; // ADO.Net lib
 using System.Data.SqlClient;
 using PhoneContactLibrary;
 using System.Collections;
+using NLog;
 
 
 namespace PhoneLibrary
@@ -45,7 +46,6 @@ namespace PhoneLibrary
         //static async Task<IEnumerable<User>> get()
         public void showRecord()
         {
-            string conStr = "Data Source=rev-cuny-b-server.database.windows.net;Initial Catalog=PhoneDirApp;Persist Security Info=True;User ID=bunmialo;Password=Olamide1";
             SqlConnection con = null;
             try
             {
@@ -61,12 +61,14 @@ namespace PhoneLibrary
                     Console.WriteLine(dr[0] + "\t" + dr[1] + "\t" + dr[2] + "\t" + dr[3] + "\t" + dr[4] );
                     Console.WriteLine();
                 }
-               
-
                 con.Close();
             }
             catch (Exception e)
             {
+                // Logging exception here using NLog
+                Logger logger = LogManager.GetCurrentClassLogger();
+                logger.Error(e, "Whoops!");
+
                 Console.WriteLine(e);
             }
             //showing person record
@@ -90,6 +92,10 @@ namespace PhoneLibrary
             }
             catch (Exception e)
             {
+                // Logging exception here using NLog
+                Logger logger = LogManager.GetCurrentClassLogger();
+                logger.Error(e, "Whoops!");
+
                 Console.WriteLine(e);
             }
             //showing phone record
@@ -112,15 +118,20 @@ namespace PhoneLibrary
             }
             catch (Exception e)
             {
+                // Logging exception here using NLog
+                Logger logger = LogManager.GetCurrentClassLogger();
+                logger.Error(e, "Whoops!");
+
                 Console.WriteLine(e);
             }
         }
         #endregion
+
         #region
         public void EditRecord()
         {
            
-            int counter = 0;
+            //int counter = 0;
             Console.WriteLine("Existing person records in the database:\n\n");
             showRecord();
 
@@ -136,7 +147,7 @@ namespace PhoneLibrary
 
             SqlConnection con = null;
             string command = "update Person  set FirstName= '" + fname + "',Lastname='"+lname+"' where ID='"+id+"'";
-           
+
 
             //1. SQL Connection
             try
@@ -148,34 +159,25 @@ namespace PhoneLibrary
                 SqlCommand cmd = new SqlCommand(command, con);
                 cmd.ExecuteNonQuery();
                 Console.WriteLine("Record updated successfully!");
-
-                //3. Execute query
-                
-                
-                
                 con.Close();
             }
             catch (Exception e)
             {
+                // Logging exception here using NLog
+                Logger logger = LogManager.GetCurrentClassLogger();
+                logger.Error(e, "Whoops!");
+
                 Console.WriteLine(e);
             }
-
-           
-
-            }
-
-       
-        #endregion
-        #region
-
+        }
 
         #endregion
+
         #region
         public void addPhone(long id, string areacode, string countryCode, String number)
         {
-           
             SqlConnection con = null;
-
+ 
             try
             {
                 SqlCommand com = new SqlCommand();
@@ -190,6 +192,10 @@ namespace PhoneLibrary
             }
             catch (Exception e)
             {
+                // Logging exception here using NLog
+                Logger logger = LogManager.GetCurrentClassLogger();
+                logger.Error(e, "Whoops!");
+
                 Console.WriteLine("Error is " + e);
             }
         }
@@ -212,17 +218,16 @@ namespace PhoneLibrary
             }
             catch (Exception e)
             {
+                // Logging exception here using NLog
+                Logger logger = LogManager.GetCurrentClassLogger();
+                logger.Error(e, "Whoops!");
                 Console.WriteLine("Error is " + e);
             }
         }
         public void addPerson(long h_id, long per_id, long ph_id, string firstname, string lastname)
         {
 
-            
             SqlConnection con = null;
-
-
-
 
             try
             {
@@ -238,13 +243,18 @@ namespace PhoneLibrary
             }
             catch (Exception e)
             {
+                // Logging exception here using NLog
+                Logger logger = LogManager.GetCurrentClassLogger();
+                logger.Error(e, "Whoops!");
                 Console.WriteLine("Error while saving person record " + e);
             }
             return;
         }
+        #endregion
+
+        #region
         public void Remove()
         {
-           
             SqlConnection con = null;
             int ID=0;
             try
@@ -268,6 +278,10 @@ namespace PhoneLibrary
             }
             catch (Exception e)
             {
+                // Logging exception here using NLog
+                Logger logger = LogManager.GetCurrentClassLogger();
+                logger.Error(e, "Whoops!");
+
                 Console.WriteLine(e);
             }
           
@@ -282,11 +296,14 @@ namespace PhoneLibrary
                 cmd.ExecuteNonQuery();
                 Console.WriteLine("person ID " + ID + " remove successfully!");
 
-
                 con.Close();
             }
             catch (Exception e)
             {
+                // Logging exception here using NLog
+                Logger logger = LogManager.GetCurrentClassLogger();
+                logger.Error(e, "Whoops!");
+
                 Console.WriteLine(e);
             }
         }
@@ -295,8 +312,7 @@ namespace PhoneLibrary
         public void search()
         {
             SqlConnection con = null;
-           
-           
+
             Console.WriteLine("Enter ID and first name to seacrh");
             int person_ID,counter=0;
             String firstname;
@@ -321,20 +337,16 @@ namespace PhoneLibrary
                 {
                     Console.WriteLine("No record exist with such name and id");
                 }
-             
-               
-
             }
             catch(Exception e)
             {
+                // Logging exception here using NLog
+                Logger logger = LogManager.GetCurrentClassLogger();
+                logger.Error(e, "Whoops!");
+
                 Console.WriteLine(e);
             }
         }
-
-        
-            
-       
-            
         #endregion
     }
 }

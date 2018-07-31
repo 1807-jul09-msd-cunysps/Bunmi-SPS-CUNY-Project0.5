@@ -7,3 +7,6 @@ C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\o
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\obj\Debug\PhoneContactLibrary.csproj.CopyComplete
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\obj\Debug\PhoneLibrary.dll
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\obj\Debug\PhoneLibrary.pdb
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\bin\Debug\NLog.config
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\bin\Debug\NLog.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\bin\Debug\NLog.xml

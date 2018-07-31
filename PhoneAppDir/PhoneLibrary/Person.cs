@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 using PhoneContactLibrary;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace PhoneContactLibrary
-{
+{ 
+
     [Serializable()]
     public class Person : ISerializable
     {
@@ -22,6 +25,9 @@ namespace PhoneContactLibrary
             // initializing dependent object Address
             this.phone = new Phone(); //initializing dependent object Phone
         }
+
+
+
 
         
 
