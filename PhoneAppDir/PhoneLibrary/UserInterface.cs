@@ -12,7 +12,7 @@ using NLog;
 
 namespace PhoneLibrary
 {
-
+    #region
     public class contacts
     {
         public int Per_ID { get; set; }
@@ -34,87 +34,52 @@ namespace PhoneLibrary
             return "Person ID: " + Per_ID + "\nFirst Name: " + Fname + "\nLast Name: " + Lname + "\nphone No: " + ph_countryCode + "-" + ph_areaCode + "-" + ph_number + "\nHouse No: " + h_no + "\nStreet: " + h_street + "\nState: " + h_state + "\ncountry: " + h_country;
         }
     }
+    #endregion
 
-
+    #region
     public class UserInterface
     {
         int H_id;
         string conStr = "Data Source=rev-cuny-b-server.database.windows.net;Initial Catalog=PhoneDirApp;Persist Security Info=True;User ID=bunmialo;Password=Olamide1";
 
-
-        #region
         //static async Task<IEnumerable<User>> get()
         public void showRecord()
         {
-            SqlConnection con = null;
+            SqlConnection conPerson = null;
+            SqlConnection conAddr = null;
+            SqlConnection conPhone = null;
             try
             {
-                con = new SqlConnection(conStr);
-                con.Open();
+                conPerson = new SqlConnection(conStr);
+                conPerson.Open();
+                String p_Query = "select * from Person";
+                SqlCommand cmd_p = new SqlCommand(p_Query, conPerson);
+                SqlDataReader Person = cmd_p.ExecuteReader();
 
-                String query = "select * from Person";
-                //2. SQL Command
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
+                conAddr = new SqlConnection(conStr);
+                conAddr.Open();
+                String addrQuery = "select * from Address";
+                SqlCommand cmd_addr = new SqlCommand(addrQuery, conAddr);
+                SqlDataReader Address = cmd_addr.ExecuteReader();
+                
+
+                conPhone = new SqlConnection(conStr);
+                conPhone.Open();
+                String phQuery = "select * from Phone";
+                SqlCommand cmd_ph = new SqlCommand(phQuery, conPhone);
+                SqlDataReader Phone = cmd_ph.ExecuteReader();
+
+                while (Person.Read() && Address.Read() && Phone.Read())
                 {
-                    Console.WriteLine(dr[0] + "\t" + dr[1] + "\t" + dr[2] + "\t" + dr[3] + "\t" + dr[4] );
-                    Console.WriteLine();
+                    Console.WriteLine(Person[0] + "\t" + Person[1] + "\t" + Person[2]);
+                    Console.WriteLine(Address[0] + "\t" + Address[1] + "\t" + Address[2]);
+                    Console.WriteLine(Phone[0] + "\t" + Phone[1] + "\t" + Phone[2]);
                 }
-                con.Close();
-            }
-            catch (Exception e)
-            {
-                // Logging exception here using NLog
-                Logger logger = LogManager.GetCurrentClassLogger();
-                logger.Error(e, "Whoops!");
 
-                Console.WriteLine(e);
-            }
-            //showing person record
-            Console.WriteLine("\n\n");
-            Console.WriteLine("Person record\n");
-            try
-            {
-                con = new SqlConnection(conStr);
-                con.Open();
-
-                String query = "select * from Person";
-                //2. SQL Command
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    Console.WriteLine(dr[0] + "\t" + dr[1] + "\t" + dr[2] + "\t" + dr[3] + "\t" + dr[4]);
-                    Console.WriteLine();
-                }
-                con.Close();
-            }
-            catch (Exception e)
-            {
-                // Logging exception here using NLog
-                Logger logger = LogManager.GetCurrentClassLogger();
-                logger.Error(e, "Whoops!");
-
-                Console.WriteLine(e);
-            }
-            //showing phone record
-            Console.WriteLine("\n\nphone record");
-            try
-            {
-                con = new SqlConnection(conStr);
-                con.Open();
-
-                String query = "select * from Phone";
-                //2. SQL Command
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    Console.WriteLine(dr[0] + "\t" + dr[1] + "\t" + dr[2] + "\t" + dr[3]);
-                    Console.WriteLine();
-                }
-                con.Close();
+                    conPerson.Close();
+                    conAddr.Close();
+                    conPhone.Close();
+                
             }
             catch (Exception e)
             {
@@ -136,7 +101,7 @@ namespace PhoneLibrary
             showRecord();
 
             Console.WriteLine("Please enter the ID whose record you would like to edit");
-            int id = Convert.ToInt16(Console.ReadLine()); //converting int to long
+            int id = Convert.ToInt16(Console.ReadLine()); //converting int to short
             string fname, lname;
             Console.WriteLine("Please enter new data for person ID: " + id);
             Console.WriteLine("please enter first name: ");
@@ -146,7 +111,7 @@ namespace PhoneLibrary
            
 
             SqlConnection con = null;
-            string command = "update Person  set FirstName= '" + fname + "',Lastname='"+lname+"' where ID='"+id+"'";
+            string command = "update Person  set FirstName= '" + fname + "', Lastname='"+lname+"' where ID='"+id+"'";
 
 
             //1. SQL Connection
@@ -308,12 +273,13 @@ namespace PhoneLibrary
             }
         }
         #endregion
+
         #region
         public void search()
         {
             SqlConnection con = null;
 
-            Console.WriteLine("Enter ID and first name to seacrh");
+            Console.WriteLine("Enter First Name to seacrh");
             int person_ID,counter=0;
             String firstname;
             Console.WriteLine("Enter ID: ");
@@ -341,8 +307,7 @@ namespace PhoneLibrary
             catch(Exception e)
             {
                 // Logging exception here using NLog
-                Logger logger = LogManager.GetCurrentClassLogger();
-                logger.Error(e, "Whoops!");
+                LogManager.GetCurrentClassLogger().Error(e, "Whoops!");
 
                 Console.WriteLine(e);
             }

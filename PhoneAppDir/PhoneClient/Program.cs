@@ -41,7 +41,7 @@ namespace PhoneContactClient
         public void addAddress(long Pid, String houseno, string streetname, string city, State state, string zipcode, Country country)
         {
             mylist.Add(new Address { Pid = Pid, houseNo = houseno, streetName = streetname, city = city, state = state, zipCode = zipcode, Country = country });
-            Console.WriteLine("Address: " + houseno + streetname + city + state + zipcode + country + " has been added!");
+            Console.WriteLine("New record: " + houseno + streetname + city + state + zipcode + country + " has been added!");
             Console.WriteLine("Press any key to continue");
             Console.ReadKey();
         }
