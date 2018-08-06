@@ -20,10 +20,10 @@ namespace PhoneContactClient
     {
         List<Person> personList = new List<Person>();
 
-        public void addPerson(long perId, string fname, string lname, string houseno, string str_name, string city, State state, string zipcode, Country country, string c_code, string phone)
+        public void addPerson(string fname, string lname, string houseno, string str_name, string city, string state, string zipcode, string country, string c_code, string phone)
         {
-            personList.Add(new Person { P_id = perId, firstName = fname, lastName = lname, houseNo = houseno, streetName = str_name, city = city, state = state, zipCode = zipcode, country = country, countryCode = c_code });
-            Console.WriteLine("Person ID " + perId + " has been added!");
+            personList.Add(new Person { firstName = fname, lastName = lname, houseNo = houseno, streetName = str_name, city = city, state = state, zipCode = zipcode, country = country, countryCode = c_code });
+            Console.WriteLine("Person ID " + fname + " has been added!");
             Console.WriteLine("Press any key to continue");
             Console.ReadKey();
         }
@@ -72,44 +72,44 @@ namespace PhoneContactClient
                         Console.WriteLine("Data in list\n\n");
                         operation.showPerson();
                         break;
-                    //case 2:
-                    //    Console.WriteLine("Enter First Name: ");
-                    //    fname = Console.ReadLine();
-                    //    Console.WriteLine("Enter Last Name: ");
-                    //    lname = Console.ReadLine();
-                    //    Console.WriteLine("Enter House No: ");
-                    //    houseno = Console.ReadLine();
-                    //    Console.WriteLine("Enter Street Name: ");
-                    //    str_name = Console.ReadLine();
-                    //    Console.WriteLine("Enter City: ");
-                    //    city = Console.ReadLine();
-                    //    Console.WriteLine("Enter State: ");
-                    //    state = Console.ReadLine();
-                    //    Console.WriteLine("Enter Zip Code: ");
-                    //    zipcode = Console.ReadLine();
-                    //    Console.WriteLine("Enter Country: ");
-                    //    country = Console.ReadLine();
-                    //    Console.WriteLine("Enter Country Code: ");
-                    //    c_code = Console.ReadLine();
-                    //    Console.WriteLine("Enter Phone Number: ");
-                    //    phone = Console.ReadLine();
-                    //                                                             //These variables cannot accept user input which isa in the form off string so that why i put in this way in that shoprogram why do we specifically use the values in the code like AK and UK for the state and country respectively?
-                    //    operation.addPerson(fname, lname, houseno, str_name, city, state, zipcode, country, c_code, phone);// this is used to perform operation on the list of address and person that doesnot matter what is the class name you can chnage it to another name
+                    case 2:
+                        Console.WriteLine("Enter First Name: ");
+                        fname = Console.ReadLine();
+                        Console.WriteLine("Enter Last Name: ");
+                        lname = Console.ReadLine();
+                        Console.WriteLine("Enter House No: ");
+                        houseno = Console.ReadLine();
+                        Console.WriteLine("Enter Street Name: ");
+                        str_name = Console.ReadLine();
+                        Console.WriteLine("Enter City: ");
+                        city = Console.ReadLine();
+                        Console.WriteLine("Enter State: ");
+                        state = Console.ReadLine();
+                        Console.WriteLine("Enter Zip Code: ");
+                        zipcode = Console.ReadLine();
+                        Console.WriteLine("Enter Country: ");
+                        country = Console.ReadLine();
+                        Console.WriteLine("Enter Country Code: ");
+                        c_code = Console.ReadLine();
+                        Console.WriteLine("Enter Phone Number: ");
+                        phone = Console.ReadLine();
+                        //These variables cannot accept user input which isa in the form off string so that why i put in this way in that shoprogram why do we specifically use the values in the code like AK and UK for the state and country respectively?
+                        operation.addPerson(fname, lname, houseno, str_name, city, state, zipcode, country, c_code, phone);// this is used to perform operation on the list of address and person that doesnot matter what is the class name you can chnage it to another name
 
-                    //    //users.addPerson(p_id, fname, lname, houseno, str_name, city, state, zipcode, country, c_code, phone);
-                    //    break;
-                    //case 3:
-                    //    users.Remove();
-                    //    break;
-                    //case 4:
-                    //    users.EditRecord();
-                    //    break;
-                    //case 5:
-                    //    users.search();
-                    //    break;
-                    //case 6:
-                    //    Environment.Exit(0);
-                    //    break;
+                        users.addPerson(fname, lname, houseno, str_name, city, state, zipcode, country, c_code, phone);
+                        break;
+                    case 3:
+                        users.Remove();
+                        break;
+                    case 4:
+                        users.EditRecord();
+                        break;
+                    case 5:
+                        users.search();
+                        break;
+                    case 6:
+                        Environment.Exit(0);
+                        break;
                 }
                 Console.WriteLine("Do you want to continue y/n?");
                 y = Convert.ToChar(Console.ReadLine());

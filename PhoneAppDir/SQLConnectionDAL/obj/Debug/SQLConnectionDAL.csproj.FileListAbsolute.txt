@@ -8,3 +8,8 @@ C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionD
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Debug\NLog.dll
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Debug\NLog.xml
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\obj\Debug\SQLConnectionDAL.csproj.CopyComplete
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Debug\PhoneClient.exe
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Debug\PhoneLibrary.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Debug\PhoneClient.pdb
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Debug\PhoneClient.exe.config
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Debug\PhoneLibrary.pdb

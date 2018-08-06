@@ -21,9 +21,9 @@ namespace PhoneContactLibrary
         public string houseNo { get; set; }
         public string streetName { get; set; }
         public string city { get; set; }
-        public State state { get; set; }
+        public string state { get; set; }
         public String zipCode { get; set; }
-        public Country country { get; set; }
+        public string country { get; set; }
         public String countryCode { get; set; }
         public string phone { get; set; }
     }

@@ -61,7 +61,6 @@ C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\Newtonsoft.Json.dll
-C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\PhoneClient.exe
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\System.Net.Http.Formatting.dll
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\System.Web.Helpers.dll
@@ -76,8 +75,6 @@ C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\WebGrease.dll
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\PhoneLibrary.dll
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\NLog.dll
-C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\PhoneClient.pdb
-C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\PhoneClient.exe.config
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\Newtonsoft.Json.xml
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\System.Net.Http.Formatting.xml
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\System.Web.Helpers.xml
@@ -103,3 +100,8 @@ C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\obj
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\obj\Debug\ContactAPI.csproj.CopyComplete
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\obj\Debug\ContactAPI.dll
 C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\obj\Debug\ContactAPI.pdb
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\SQLConnectionDAL.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\System.Web.Cors.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\System.Web.Http.Cors.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\SQLConnectionDAL.pdb
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\ContactAPI\bin\System.Web.Http.Cors.xml

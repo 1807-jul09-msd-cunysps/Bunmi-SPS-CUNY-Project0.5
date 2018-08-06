@@ -15,9 +15,9 @@ namespace SQLConnectionDAL
     {
         public void GET()
         {
-            string conStr = "Data Source=rev-cuny-b-server.database.windows.net;Initial Catalog=PhoneDirApp;Persist Security Info=True;User ID=bunmialo;Password=Olamide1";
+            //string conStr = "Data Source=rev-cuny-b-server.database.windows.net;Initial Catalog=PhoneDirApp;Persist Security Info=True;User ID=bunmialo;Password=Olamide1";
 
-            SqlConnection conPerson = null;
+            //SqlConnection conPerson = null;
 
         }
     }

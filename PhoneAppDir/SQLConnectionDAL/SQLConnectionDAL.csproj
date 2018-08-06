@@ -60,15 +60,5 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PhoneClient\PhoneContactClient.csproj">
-      <Project>{d6b9eb75-5d16-4b7e-8f1d-12d9d1decc25}</Project>
-      <Name>PhoneContactClient</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PhoneLibrary\PhoneContactLibrary.csproj">
-      <Project>{905d5a13-3459-4ba5-9727-8e0f8feb7fad}</Project>
-      <Name>PhoneContactLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
