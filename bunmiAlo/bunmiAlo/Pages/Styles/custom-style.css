@@ -1,0 +1,164 @@
+/************
+1.0 - Home
+2.0 - Contact
+3.0 - Register
+3.0 - About
+*************/
+
+
+
+/*****************
+    1.0 - Home
+******************/
+.margin-0{
+    margin: 0;
+}
+.banner-img{
+    
+}
+.banner-img img{
+    width: 100%;
+}
+nav{
+    
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li a{
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 20px;
+    display: inline-block;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+}
+.register-link{
+    
+}
+.register-link a{
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 20px;
+    display: inline-block;
+}
+.register-link a:hover{
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+}
+.content-block{
+    padding: 20px 0;
+}
+.content-block ul{
+    
+}
+.content-block ul li{
+    font-size: 33px;
+    padding: 0 0 18px;
+}
+.content-block ul li a{
+    
+}
+.video-block{
+    padding: 20px 0;
+    
+}
+.video-block video{
+    height: 100%;
+    width: 100%;
+}
+footer{
+    background-color: #000;
+    padding: 16px 0;
+    text-align: center;
+}
+footer p{
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+}
+
+
+/*****************
+    1.0 - Contact
+******************/
+.contact-main{
+    max-width: 650px;
+    margin: 20px auto;
+    border: 1px solid #ced4da;
+    padding: 20px;
+}
+.message-panel{
+    background-color: #797878;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0 0 20px;
+}
+.message-panel p{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+.message-panel p a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/***************** 
+   1.0 - Register 
+*******************/
+.register-block{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.register-block form{
+    
+}
+.personal-block{
+    border: 1px solid #ced4da;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 0 0 20px;
+}
+.address-block{
+    border: 1px solid #ced4da;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 0 0 20px;
+}
+.contact-block{
+    border: 1px solid #ced4da;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 0 0 20px;
+}
+.register-block legend{
+    font-size: 24px;
+    margin: 0 0 22px;
+    font-weight: 600;
+}
+.text-error{
+    color: #dc3545;
+}
+
+/*****************
+    1.0 - About
+******************/
+.about-main{
+    padding: 20px;
+}
+.about-main h2.title{
+    margin: 0 0 20px;
+}

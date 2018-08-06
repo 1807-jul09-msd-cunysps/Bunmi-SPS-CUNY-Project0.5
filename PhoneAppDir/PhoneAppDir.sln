@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneContactLibrary", "Phon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneContactClient", "PhoneClient\PhoneContactClient.csproj", "{D6B9EB75-5D16-4B7E-8F1D-12D9D1DECC25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactAPI", "ContactAPI\ContactAPI.csproj", "{F1FA5907-C85C-4431-B944-1809ED1F153E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLConnectionDAL", "SQLConnectionDAL\SQLConnectionDAL.csproj", "{76983CD8-BD52-4A7F-ADC4-9B4C9E78696A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{D6B9EB75-5D16-4B7E-8F1D-12D9D1DECC25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6B9EB75-5D16-4B7E-8F1D-12D9D1DECC25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6B9EB75-5D16-4B7E-8F1D-12D9D1DECC25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1FA5907-C85C-4431-B944-1809ED1F153E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FA5907-C85C-4431-B944-1809ED1F153E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FA5907-C85C-4431-B944-1809ED1F153E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FA5907-C85C-4431-B944-1809ED1F153E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76983CD8-BD52-4A7F-ADC4-9B4C9E78696A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76983CD8-BD52-4A7F-ADC4-9B4C9E78696A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76983CD8-BD52-4A7F-ADC4-9B4C9E78696A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76983CD8-BD52-4A7F-ADC4-9B4C9E78696A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

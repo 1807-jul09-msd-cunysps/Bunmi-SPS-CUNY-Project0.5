@@ -1,0 +1,20 @@
+Hi,
+I need help with a school project that involves Javascript (AJAX/API calls) and bootstrap. This project is due by Monday. So really, this has to be done by today, so I can structure things in a way that I can explain to myself all that is going on in the code. 
+
+The project is a small portfolio site of four pages (Home, About Me, Contact Me, and Join Me). The two most important pages are the Contact and Join Me, because they both deal with forms and Javascript including AJAX API calls. In the Join Me, the AJAX call needs to populate the city and state after user enters their zip code. It also requires form validations, which I'll explain further below. In the Home page, you can input any dummy video url, and I'll just change it later. We are supposed to record a video of ourselves and paste there.
+
+Here are the validations, all of which must be done in Javascript:
+
+- match firstname and last name
+Age range should be between 15 to 100
+All fields are required except extension (That is the zip code extension)
+write validation for zipcode-
+write a validation for phone
+
+The api url is http://www.zipcodeapi.com but I will have to sign up and get a key. 
+
+I have attached the design draft, which should be used to build it. You can input dummy texts in the About page, and I'll just change those later. The Join me has about 3 sections in the form (which you will see in the design draft). The second, which is the address should be designed in a way that, under the "current address" field, there is an option to scroll down and select if it is the same as their permanent address. If yes, nothing happens. But if no, an empty form of all the input they just filled out in the "current address" section appears below under the title "Permanent address." So that involves, eventListeners, window.onLoad, etc. 
+
+I'll explain more and answer any further questions, if you are able to help with this, and within the time constraint.
+
+Thank you

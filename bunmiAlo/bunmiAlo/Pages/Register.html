@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
+
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="../Pages/Styles/custom-style.css" rel="stylesheet" />
+    <title>Join Me</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <div class="jumbotron text-center margin-0">
+                        <h1>Bunmi Alo</h1>
+                    </div>
+                    <nav class="navbar sticky-top navbar-dark bg-primary">
+                        <ul>
+                            <li><a href="Home.html">Home</a></li>
+                            <li><a href="AboutMe.html">About Me</a></li>
+                            <li><a href="../Pages/ContactMe.html">Contact</a></li>
+                        </ul>
+                        <div class="register-link">
+                            <a href="Register.html">Join me</a>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <div class="register-block">
+            <form class="needs-validation" novalidate>
+                <div class="personal-block">
+                    <legend>PERSONAL DETAILS</legend>
+                    <div class="form-group row">
+                        <label for="first-name" class="col-sm-2">First Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="first-name" name="first-name" placeholder="First name" required>
+                            <div class="invalid-feedback">
+                                Please provide first name.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="last-name" class="col-sm-2">Last Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last name" required>
+                            <div class="invalid-feedback">
+                                Please provide last name.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="age" class="col-sm-2">Age</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="age" name="age" placeholder="Age" min="15" max="100" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid age.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="gender" class="col-sm-2">Gender</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select Gender.
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="form-group row">
+                        <label for="male" class="col-sm-2">Gender</label>
+                        <div class="form-check custom-control">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                            <label class="form-check-label" for="male">Male</label>
+                            <div class="invalid-feedback">
+                                Please select a gender.
+                            </div>
+                        </div>
+                        <div class="form-check custom-control">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="address-block" id="address-block">
+                    <legend>CURRENT ADDRESS</legend>
+                    <div class="form-group row">
+                        <label for="current-address" class="col-sm-2">Address</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="current-address" name="current-address" placeholder="Enter your address here" required>
+                            <div class="invalid-feedback">
+                                Please provide a Address.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="current-address-2" class="col-sm-2">Address 2</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="current-address-2" name="current-address-2" placeholder="Apt, flr, etc" required>
+                            <div class="invalid-feedback">
+                                Please provide a Address.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="current-city" class="col-sm-2">City</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="current-city" name="current-city" placeholder="City" required>
+                            <div class="invalid-feedback">
+                                Please provide a City.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="current-state" class="col-sm-2">State</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="current-state" name="current-state" placeholder="State" required>
+                            <div class="invalid-feedback">
+                                Please provide a State.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="current-country" class="col-sm-2">Country</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="current-country" name="current-country" required>
+                                <option value="">Select Country Code</option>
+                                <option>Nigeria</option>
+                                <option>Senegal</option>
+                                <option>India</option>
+                                <option>Mali</option>
+                                <option>USA</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select Country.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="current-zipcode" class="col-sm-2">Zip</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="current-zipcode" name="current-zipcode" placeholder="Zip" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid Zip Code.
+                            </div>
+                            <div class="text-error"></div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="address-same" class="col-sm-6">Is permanent address the same as current address?</label>
+                        <div class="col-sm-6">
+                            <select class="custom-checkbox form-control" id="address-same" onchange="checkAddress();" required>
+                                <option value="">Select</option>
+                                <option value="Y">Yes</option>
+                                <option value="N">No</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select option.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="permanent-address-block" id="permanent-address-block" style="display:none;">
+                        <legend>PERMANENT ADDRESS</legend>
+                        <!--<div class="form-group row">
+                            <label for="permanent-address" class="col-sm-2">Address</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="permanent-address" name="permanent-address" placeholder="Enter your address here" required>
+                                <div class="invalid-feedback">
+                                    Please provide a Address.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="permanent-address-2" class="col-sm-2">Address 2</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="permanent-address-2" name="permanent-address-2" placeholder="Apt, flr, etc" required>
+                                <div class="invalid-feedback">
+                                    Please provide a Address.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="permanent-city" class="col-sm-2">City</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="permanent-city" name="permanent-city" placeholder="City" required>
+                                <div class="invalid-feedback">
+                                    Please provide a City.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="permanent-state" class="col-sm-2">State</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="permanent-state" name="permanent-state" placeholder="State" required>
+                                <div class="invalid-feedback">
+                                    Please provide a State.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="permanent-country" class="col-sm-2">Country</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="permanent-country" name="permanent-country" required>
+                                    <option value="">Select Country Code</option>
+                                    <option>Nigeria</option>
+                                    <option>Senegal</option>
+                                    <option>India</option>
+                                    <option>Mali</option>
+                                    <option>USA</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select Country.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="permanent-zipcode" class="col-sm-2">Zip</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="permanent-zipcode" name="permanent-zipcode" placeholder="Zip" min="4" max="6" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid Zip Code.
+                                </div>
+                                <div class="text-error"></div>
+                            </div>
+                        </div>-->
+
+                        <div class="form-group row" id="permanent-address">
+
+                        </div>
+                        <div class="form-group row" id="permanent-address-2">
+
+                        </div>
+                        <div class="form-group row" id="permanent-city">
+
+                        </div>
+                        <div class="form-group row" id="permanent-state">
+
+                        </div>
+                        <div class="form-group row" id="permanent-country">
+
+                        </div>
+                        <div class="form-group row" id="permanent-zipcode">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+                    <legend>CONTACT DETAILS</legend>
+                    <div class="form-group row">
+                        <label for="country-code" class="col-sm-2">Country Code</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="country-code" name="country-code" required>
+                                <option value="">Default select</option>
+                                <option>234</option>
+                                <option>221</option>
+                                <option>91</option>
+                                <option>223</option>
+                                <option>1</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select country code.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="area-code" class="col-sm-2">Area Code</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="area-code" name="area-code" placeholder="Area Code" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid Area Code.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="phone" class="col-sm-2">Phone</label>
+                        <div class="col-sm-10">
+                            <input type="tel" class="form-control" pattern="\d{10}" id="phone" name="phone" placeholder="Phone" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid Phone.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="extension" class="col-sm-2">Ext.</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="extension" name="extension" placeholder="extension">
+                            <div class="invalid-feedback">
+                                Please provide a valid Extension.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2">Email address</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid Email.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalid-check" required>
+                            <label class="form-check-label" for="invalid-check">
+                                Yes I confirm all my details are correct.
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-block">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../Scripts/jquery-3.0.0.min.js"></script>
+    <script src="../Pages/Scripts/Register.js"></script>
+</body>
+
+</html>
