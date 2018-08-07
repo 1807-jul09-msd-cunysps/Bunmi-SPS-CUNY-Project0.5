@@ -1,0 +1,12 @@
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\bin\Release\NLog.config
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\bin\Release\PhoneLibrary.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\bin\Release\PhoneLibrary.pdb
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\bin\Release\Newtonsoft.Json.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\bin\Release\NLog.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\bin\Release\Newtonsoft.Json.xml
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\bin\Release\NLog.xml
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\obj\Release\PhoneContactLibrary.csprojAssemblyReference.cache
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\obj\Release\PhoneContactLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\obj\Release\PhoneContactLibrary.csproj.CopyComplete
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\obj\Release\PhoneLibrary.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\PhoneLibrary\obj\Release\PhoneLibrary.pdb

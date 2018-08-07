@@ -1,8 +1,8 @@
 ﻿window.addEventListener('load', function () {
 
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    // Fetching all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
+    // Looping over them and prevent submission
     var validation = Array.prototype.filter.call(forms, function (form) {
         form.addEventListener('submit', function (event) {
             if (form.checkValidity() === false) {
@@ -14,56 +14,56 @@
     });
 
 
-    // IMPORTANT: Fill in your client key
+    // Filling in my client key
     var clientKey = "js-gBE4qlpxgI0Q0elxYSjkd6jNrJyisPA0js10AsEWkuYMkuI30W9NxDXHDrOCKPno";
 
     var cache = {};
     var container = $("#address-block");
     var errorDiv = container.find("div.text-error");
 
-    /* Handle successful response of current address zip code section*/
+    /* Handling successful response of current address zip code section*/
     function handleResp(data) {
-        // Check for error
+        // Checking for error
         if (data.error_msg)
             errorDiv.text(data.error_msg);
         else if ("city" in data) {
-            // Set city and state
+            // Setting city and state
             container.find("input[name='current-city']").val(data.city);
             container.find("input[name='current-state']").val(data.state);
         }
     }
 
-    // Set up event handlers for current address zipcode
+    // Setting up event handlers for current address zipcode
     $(document).on("keyup change", "input[name='current-zipcode']", function () {
-        // Get zip code
+        // Getting zip code
         var zipcode = $(this).val().substring(0, 5);
         if (zipcode.length == 5 && /^[0-9]+$/.test(zipcode)) {
-            // Clear error
+            // Clearing error
             errorDiv.empty();
 
-            // Check cache
+            // Checking cache
             if (zipcode in cache) {
                 handleResp(cache[zipcode]);
             }
             else {
-                // Build url
+                // Building url
                 var url = "http://www.zipcodeapi.com/rest/" + clientKey + "/info.json/" + zipcode + "/radians";
 
-                // Make AJAX request
+                // Making AJAX request
                 $.ajax({
                     "url": url,
                     "dataType": "json"
                 }).done(function (data) {
                     handleResp(data);
 
-                    // Store in cache
+                    // Storing in cache
                     cache[zipcode] = data;
                 }).fail(function (data) {
                     if (data.responseText && (json = $.parseJSON(data.responseText))) {
-                        // Store in cache
+                        // Storing in cache
                         cache[zipcode] = json;
 
-                        // Check for error
+                        // Checking for error
                         if (json.error_msg)
                             errorDiv.text(json.error_msg);
                     }
@@ -81,7 +81,7 @@
     var container_1 = $("#permanent-address-block");
     var errorDiv_1 = container_1.find("div.text-error");
 
-    /* Handle successful response of current address zip code section*/
+    /* Handling successful response of current address zip code section*/
     function handleResp_1(data) {
         // Check for error
         if (data.error_msg)
@@ -93,37 +93,37 @@
         }
     }
 
-    // Set up event handlers for current address zipcode
+    // Setting up event handlers for current address zipcode
     $(document).on("keyup change", "input[name='permanent-zipcode']", function () {
-        // Get zip code
+        // Getting zip code
         var zipcode = $(this).val().substring(0, 5);
         if (zipcode.length == 5 && /^[0-9]+$/.test(zipcode)) {
-            // Clear error
+            // Clearing error
             container_1.find("div.text-error").empty();
 
-            // Check cache
+            // Checking cache
             if (zipcode in cache_1) {
                 handleResp_1(cache_1[zipcode]);
             }
             else {
-                // Build url
+                // Building url
                 var url = "http://www.zipcodeapi.com/rest/" + clientKey + "/info.json/" + zipcode + "/radians";
 
-                // Make AJAX request
+                // Making AJAX request
                 $.ajax({
                     "url": url,
                     "dataType": "json"
                 }).done(function (data) {
                     handleResp_1(data);
 
-                    // Store in cache
+                    // Storing in cache
                     cache_1[zipcode] = data;
                 }).fail(function (data) {
                     if (data.responseText && (json = $.parseJSON(data.responseText))) {
-                        // Store in cache
+                        // Storing in cache
                         cache_1[zipcode] = json;
 
-                        // Check for error
+                        // Checking for error
                         if (json.error_msg)
                             container_1.find("div.text-error").text(json.error_msg);
                     }
@@ -143,7 +143,7 @@ function checkAddress() {
     var check = document.getElementById("address-same").value;
     var required;
 
-    //check if value is yes or no and then display hide the permanent address block
+    //check if value is yes or no and then display or hide the permanent address block
     if (check == "Y" || check == "") {
         document.getElementById("permanent-address-block").style.display = "none";
         required = false;
@@ -163,6 +163,7 @@ function checkAddress() {
     //    }
     //}
 
+   
 }
 
 /* Delete permanent address elements */
@@ -332,9 +333,34 @@ function createPermanentAddress() {
 }
 
 
+function postPerson() {
+    var person = {
+        "firstName": document.getElementById("first-name").value,
+        "lastName": document.getElementById("last-name").value,
+        "houseNo": document.getElementById("current-address-2").value,
+        "streetName": document.getElementById("current-address").value,
+        "city": document.getElementById("current-city").value,
+        "state": document.getElementById("current-state").value,
+        "zipCode": document.getElementById("current-zipcode").value,
+        "country": document.getElementById("current-country").value,
+        "countryCode": document.getElementById("country-code").value,
+        "phone": document.getElementById("phone").value,
+    }
 
-
-
+    $.ajax({
+        type: "Post",
+        url: "http://localhost:64799/api/Person",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(contact),
+            success: function (response) {
+                alert(response);
+            },
+            error: function (response) {
+                console.log(response);
+            }
+        });
+}
 
 
 

@@ -1,0 +1,13 @@
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Release\NLog.config
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Release\SQLConnectionDAL.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Release\SQLConnectionDAL.pdb
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Release\NLog.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Release\PhoneLibrary.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Release\System.Web.Cors.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Release\PhoneLibrary.pdb
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\bin\Release\NLog.xml
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\obj\Release\SQLConnectionDAL.csprojAssemblyReference.cache
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\obj\Release\SQLConnectionDAL.csproj.CoreCompileInputs.cache
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\obj\Release\SQLConnectionDAL.csproj.CopyComplete
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\obj\Release\SQLConnectionDAL.dll
+C:\Users\Bunmi\Source\Repos\Bunmi-SPS-CUNY-Project0.5\PhoneAppDir\SQLConnectionDAL\obj\Release\SQLConnectionDAL.pdb

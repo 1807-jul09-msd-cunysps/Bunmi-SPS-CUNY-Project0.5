@@ -2,28 +2,30 @@
 using System.Web.Http;
 using System.Web.Http.Cors;
 using PhoneContactLibrary;
+using SQLConnectionDAL;
 
 namespace ContactAPI.Controllers
 {
     [EnableCors("*","*","*")]
     public class PersonController : ApiController
     {
-        
+        ConnectToSQL crud = new ConnectToSQL();
         //READ
         [HttpGet]
-       // public IEnumerable<Person> Get()
-        // {
+        public IHttpActionResult Get()
+        {
+            var person = crud.GET();
+            return Json(person);
+        }
 
-            //return person;
-        // }
         //ADD Person
         [HttpPost]
         public IHttpActionResult Post(Person p)
         {
             if (p != null)
             {
-                // Make a call to CRUD Method to insert in to DB
-                return Ok();
+                crud.POST(p);
+                return Ok("Person Added Successfully!!");
             }
             else
             {

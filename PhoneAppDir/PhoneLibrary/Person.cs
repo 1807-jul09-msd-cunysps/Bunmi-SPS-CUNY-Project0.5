@@ -22,9 +22,9 @@ namespace PhoneContactLibrary
         public string streetName { get; set; }
         public string city { get; set; }
         public string state { get; set; }
-        public String zipCode { get; set; }
+        public string zipCode { get; set; }
         public string country { get; set; }
-        public String countryCode { get; set; }
+        public string countryCode { get; set; }
         public string phone { get; set; }
     }
 }
